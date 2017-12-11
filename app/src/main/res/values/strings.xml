@@ -91,7 +91,11 @@
     <!-- tambahan -->
     <string name="desc_logo">ini logonya</string>
     <string name="teks_fb">Facebook</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_maps">Navigation</string>
     <string name="menu_profile">Profile</string>
+
+    <string name="item_bengkel">Bengkel</string>
+    <string name="comming_soon">Comming soon</string>
 </resources>
