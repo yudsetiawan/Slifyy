@@ -48,7 +48,7 @@
                     android:text="@string/item_bengkel"
                     android:textStyle="bold"
                     android:gravity="center"
-                    android:textSize="14dp"/>
+                    android:textSize="14sp"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -96,7 +96,7 @@
                     android:text="@string/comming_soon"
                     android:textStyle="bold"
                     android:gravity="center"
-                    android:textSize="14dp"/>
+                    android:textSize="14sp"/>
 
                 <View
                     android:layout_width="match_parent"
