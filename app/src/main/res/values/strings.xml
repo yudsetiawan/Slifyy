@@ -92,10 +92,16 @@
     <string name="desc_logo">ini logonya</string>
     <string name="teks_fb">Facebook</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_maps">Navigation</string>
     <string name="menu_profile">Profile</string>
+    <string name="menu_history">History</string>
+    <string name="menu_contactus">Contact Us</string>
 
-    <string name="item_bengkel">Bengkel</string>
-    <string name="comming_soon">Comming soon</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="input_location">Input your location</string>
+
+    <!-- profile -->
+    <string name="nama">Nama</string>
+    <string name="notelp">No Telephone</string>
 </resources>

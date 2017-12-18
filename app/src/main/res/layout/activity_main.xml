@@ -1,126 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/drawer"
     tools:context="com.bekicode.slifyy.MainActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <!--
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="236dp"
-            android:layout_marginEnd="235dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="175dp"
-            android:foreground="?android:selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintBottom_toTopOf="@+id/navigation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.475"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:contentDescription="@string/app_name"
-                    android:layout_marginTop="20dp"
-                    app:srcCompat="@drawable/ic_directions_bike_black_24dp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/item_bengkel"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textSize="14sp"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/cardview_light_background">
-
-                </View>
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginBottom="236dp"
-            android:layout_marginEnd="80dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="175dp"
-            android:foreground="?android:selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            app:layout_constraintBottom_toTopOf="@+id/navigation"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/cardView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
-                    android:contentDescription="@string/app_name"
-                    app:srcCompat="@drawable/ic_add_black_24dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/comming_soon"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:textSize="14sp"/>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/cardview_light_background">
-
-                </View>
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.design.widget.BottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/navigation"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="start"
-            android:layout_marginTop="510dp"
-            style="?android:windowActionBarOverlay"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/my_navigation_items" />
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorWhite"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    -->
 
-    </android.support.constraint.ConstraintLayout>
-</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/input_location"
+                    android:layout_margin="8dp"/>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="vertical"
+                android:background="@color/colorGray"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bengkel Unsika"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7.00 AM - 23.00 PM"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/colorGray"
+        app:itemIconTint="@color/colorGray"
+        app:menu="@menu/my_navigation_items"
+        android:fitsSystemWindows="true">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
