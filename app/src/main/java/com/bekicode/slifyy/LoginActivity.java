@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener  {
 
     Button btnFb;
     @Override
@@ -14,8 +14,9 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnFb = (Button)findViewById(R.id.btnFb);
+        findViewById(R.id.tvSignup).setOnClickListener(this);
 
+        btnFb = (Button)findViewById(R.id.btnFb);
         btnFb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,5 +26,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.tvSignup:
+                startActivity(new Intent(this, RegistrationActivity.class));
+
+                break;
+        }
     }
 }

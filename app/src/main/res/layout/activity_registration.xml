@@ -14,6 +14,7 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:orientation="vertical">
+
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,6 +34,7 @@
                     android:textStyle="bold"
                     android:layout_gravity="center"/>
                 <EditText
+                    android:id="@+id/tvUsernameDaftar"
                     android:layout_width="240dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="20dp"
@@ -40,14 +42,17 @@
                     android:hint="username"
                     android:background="@color/cardview_shadow_end_color"/>
                 <EditText
+                    android:id="@+id/tvEmailDaftar"
                     android:layout_width="240dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="15dp"
                     android:padding="10dp"
+                    android:inputType="textEmailAddress"
                     android:hint="email"
                     android:background="@color/cardview_shadow_end_color"/>
 
                 <EditText
+                    android:id="@+id/tvPasswordDaftar"
                     android:layout_width="240dp"
                     android:layout_height="40dp"
                     android:layout_marginTop="15dp"
@@ -61,15 +66,28 @@
                     android:layout_marginTop="20dp"
                     app:cardBackgroundColor="@color/colorPrimary"
                     app:cardCornerRadius="20dp">
+
                     <TextView
+                        android:id="@+id/tvSubmitDaftar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Submit"
                         android:layout_gravity="center"
-                        android:textSize="18sp"
-                        android:textColor="@color/colorWhite"/>
+                        android:text="Submit"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
                 </android.support.v7.widget.CardView>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAlreadyLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="Already have account ?" />
+
 </LinearLayout>
